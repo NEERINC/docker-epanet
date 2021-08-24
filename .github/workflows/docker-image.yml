@@ -7,25 +7,25 @@ on:
     branches: [ main ]
 
 jobs:
-  build-2.0.11:
+  build-2_0_11:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Build EPANET 2.0.11 Docker image
       run: docker build . --tag epanet:2.0.11-$(date +%s)
-  build-2.0.12:
+  build-2_0_12:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Build EPANET 2.0.11 Docker image
       run: docker build . --tag epanet:2.0.11-$(date +%s)
-  build-2.1.0:
+  build-2_1_0:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Build EPANET 2.0.11 Docker image
       run: docker build . --tag epanet:2.0.11-$(date +%s)
-  build-2.1.1:
+  build-2_1_1:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
