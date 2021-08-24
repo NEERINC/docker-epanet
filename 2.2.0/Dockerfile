@@ -20,7 +20,7 @@ RUN mkdir build && cd ./build && cp -R ../src . && cd ./src && \
 # Stage 3: Run EPANET simulation
 
 FROM ubuntu
-WORKDIR /simulate
+WORKDIR /epanet
 COPY ./entrypoint.sh .
 COPY --from=build /epanet/build/epanet2.2.0 .
 RUN apt update && apt install -y wget
