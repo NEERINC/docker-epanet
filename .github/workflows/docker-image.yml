@@ -7,9 +7,33 @@ on:
     branches: [ main ]
 
 jobs:
+  build-2.0.11:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build EPANET 2.0.11 Docker image
+      run: docker build . --tag epanet:2.0.11-$(date +%s)
+  build-2.0.12:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build EPANET 2.0.11 Docker image
+      run: docker build . --tag epanet:2.0.11-$(date +%s)
+  build-2.1.0:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build EPANET 2.0.11 Docker image
+      run: docker build . --tag epanet:2.0.11-$(date +%s)
+  build-2.1.1:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build EPANET 2.0.11 Docker image
+      run: docker build . --tag epanet:2.0.11-$(date +%s)
   build-2_2_0:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Build the 2.2.0 Docker image
-      run: docker build 2.2.0/. --tag my-image-name:$(date +%s)
+    - name: Build EPANET 2.2.0 Docker image
+      run: docker build . --tag epanet:2.2.0-$(date +%s)
