@@ -1,3 +1,8 @@
+### EPANET Files
+.inp
+.out
+.rpt
+
 ### Environment
 .env
 
