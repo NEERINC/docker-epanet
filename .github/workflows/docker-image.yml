@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build-2.2.0:
+  build-2_2_0:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
