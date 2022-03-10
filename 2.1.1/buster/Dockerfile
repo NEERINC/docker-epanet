@@ -8,7 +8,7 @@ RUN apt-get -y update && \
     apt-get -y install --no-install-recommends \
     ca-certificates git build-essential cmake
 
-# Clone EPASWMM source code for the specified version
+# Clone EPANET source code for the specified version
 RUN git clone -b v2.1.1 --depth 1 https://github.com/USEPA/epanet-solver .
 
 # Change directory to the build/CMake folder

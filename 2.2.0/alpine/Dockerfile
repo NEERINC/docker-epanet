@@ -7,7 +7,7 @@ WORKDIR /epanet
 RUN apk add --no-cache \
     git build-base cmake
 
-# Clone EPASWMM source code for the specified version
+# Clone EPANET source code for the specified version
 RUN git clone -b v2.2.0 --depth 1 https://github.com/USEPA/epanet-solver .
 
 # Create build folder
